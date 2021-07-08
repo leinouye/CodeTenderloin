@@ -1,7 +1,22 @@
 .container{
     background-color: yellow; /* this changes the background color*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .item{
     background-color: teal;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+
+#box {
+    grid-column: 1 / 3;
+}
+
+#box2 {
+    grid-row: span 3;
 }
